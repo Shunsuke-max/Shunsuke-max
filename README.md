@@ -13,13 +13,15 @@ I am interested in how artificial intelligence can deepen our understanding of b
 
 ## Selected projects
 
-### [FoldLens](https://github.com/Shunsuke-max/foldlens)
+### [FoldLens — Product & Engineering Portfolio](https://github.com/Shunsuke-max/foldlens-portfolio)
 
-A local-first workspace for reviewing AlphaFold 3 predictions, built for OpenAI Build Week 2026.
+A local-first research workspace for interpreting AlphaFold 3 predictions, originally built for OpenAI Build Week 2026 and developed into a broader scientific software project.
 
-FoldLens brings molecular structures, confidence metrics, predicted aligned error (PAE), and evidence-linked AI analysis into a single interface. Its design emphasizes scientific interpretability, data privacy, and the distinction between prediction confidence and experimental validation.
+FoldLens integrates molecular visualization, confidence metrics, deterministic cross-model analysis, and a tool-using AI research agent. The current development also includes a macOS application and metered AI service infrastructure, with scientific calibration and configured web-service validation ongoing.
 
-**Technologies:** TypeScript, React, Express, OpenAI API
+**Technologies:** TypeScript, React, Express, OpenAI API, Electron, Supabase, Stripe
+
+[Original public implementation](https://github.com/Shunsuke-max/foldlens) · [macOS releases](https://github.com/Shunsuke-max/foldlens-releases/releases)
 
 ### [EIKEN Grade 1 Speaking](https://github.com/Shunsuke-max/eiken-grade1-speaking)
 

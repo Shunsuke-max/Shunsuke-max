@@ -40,11 +40,17 @@ A **local-first AI research workspace** for interpreting, comparing, and auditin
 - **Stack**: TypeScript, React, Express, 3Dmol.js, OpenAI Responses API, Zod, Electron, Vitest
 - **Links**: [Product & Engineering Portfolio (EN)](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md) · [Original Public Source](https://github.com/Shunsuke-max/foldlens) · [macOS Releases](https://github.com/Shunsuke-max/foldlens-releases/releases)
 
-#### [AI-driven Protein Design — Computational Research Portfolio](https://github.com/Shunsuke-max/protein-design-portfolio)
+#### [VAMP721–PICALM1a Structural Ensemble Analysis (Python / BioEmu-2)](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md)
+A reproducible Python structural bioinformatics pipeline using **BioEmu-2** (`equilibrium` mode) to sample and quantitatively evaluate protein-complex conformational ensembles (public executed notebook, plots, and sensitivity checks).
+- **Highlights**: Integrates construct validation, explicit MSA generation, unrestrained A100 sampling, physicality QC (`8/8` passed), MDTraj DSSP secondary-structure analysis, `SciPy cKDTree` interchain/intradomain contact maps (6/8/10 Å sensitivity analysis), and automated reproducibility provenance packaging.
+- **Stack**: Python, Jupyter Notebook, Google Colab, BioEmu-2, PyTorch, MDTraj, SciPy, NumPy, pandas, Matplotlib
+- **Links**: [Analysis Repository & Executed Notebook (EN)](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md)
+
+#### [AI-driven Protein Design — Computational Research Portfolio](https://github.com/Shunsuke-max/protein-design-portfolio/blob/main/README.en.md)
 Computational protein design workflows and hypothesis-testing documentation developed for the Anthropic × Adaptyv Protein Design Competition 2026 (Open Track), targeting oncology and delivery-relevant proteins (**EGFR, TfR1, and KRAS G12D pMHC**).
 - **Highlights**: Covers literature and experimental structure review, multi-model workflow design (RFdiffusion3, LigandMPNN, ProteinMPNN, Boltz-2, AlphaFold 3), failure-mode logging, and disciplined separation of predicted confidence from experimental binding.
 - **Stack**: Python, Jupyter Notebook, Google Colab, biomolecular design and structure prediction models
-- **Links**: [Computational Research Portfolio (JP)](https://github.com/Shunsuke-max/protein-design-portfolio)
+- **Links**: [Computational Research Portfolio (EN)](https://github.com/Shunsuke-max/protein-design-portfolio/blob/main/README.en.md)
 
 ---
 

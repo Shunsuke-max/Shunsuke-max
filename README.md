@@ -40,6 +40,12 @@ AlphaFold 3 の予測結果を研究者が解釈・比較・検証するため�
 - **技術**：TypeScript, React, Express, 3Dmol.js, OpenAI Responses API, Zod, Electron, Vitest
 - **リンク**：[プロダクト詳細（ポートフォリオ）](https://github.com/Shunsuke-max/foldlens-portfolio) · [初期版ソースコード](https://github.com/Shunsuke-max/foldlens) · [macOS 配布ページ](https://github.com/Shunsuke-max/foldlens-releases/releases)
 
+#### [VAMP721–PICALM1a Structural Ensemble Analysis（Python / BioEmu-2）](https://github.com/Shunsuke-max/vamp721-structural-ensemble)
+拡散モデル **BioEmu-2** を用いたタンパク質複合体の配座アンサンブル探索と、Python 構造バイオインフォマティクスによる再現可能な定量解析パイプライン（実行済み Notebook・可視化図・感度分析を公開）。
+- **解析のポイント**：非拘束の `equilibrium` サンプリング（NVIDIA A100）に対し、物理・幾何品質検査（`check_physicality`: 8/8 合格）、MDTraj による DSSP 二次構造定量、`SciPy cKDTree` による鎖間・ドメイン間接触マップ（6/8/10 Å の感度分析）、再現性メタデータの自動アーカイブまで一貫実装しています。
+- **技術**：Python, Jupyter Notebook, Google Colab, BioEmu-2, PyTorch, MDTraj, SciPy, NumPy, pandas, Matplotlib
+- **リンク**：[解析リポジトリ・実行済み Notebook](https://github.com/Shunsuke-max/vamp721-structural-ensemble)
+
 #### [AI-driven Protein Design — Computational Research Portfolio](https://github.com/Shunsuke-max/protein-design-portfolio)
 Anthropic × Adaptyv Protein Design Competition 2026（Open Track）に向けた、**オンコロジー・デリバリー関連標的（EGFR / TfR1 / KRAS G12D pMHC）の計算タンパク質設計と評価ワークフロー**の記録。
 - **取り組みのポイント**：文献・公開構造に基づく科学的な課題設定から、複数モデル（RFdiffusion3 / LigandMPNN / ProteinMPNN / Boltz-2 / AlphaFold 3 等）を用いた計算フロー構築、失敗ログや計算限界の整理までを体系化しています。

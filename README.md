@@ -23,6 +23,14 @@ FoldLens integrates molecular visualization, confidence metrics, deterministic c
 
 [Original public implementation](https://github.com/Shunsuke-max/foldlens) · [macOS releases](https://github.com/Shunsuke-max/foldlens-releases/releases)
 
+### [Part5 Pro — Product & Engineering Portfolio](https://github.com/Shunsuke-max/part5-pro-portfolio)
+
+An iOS learning app for TOEIC Part 5, available on the App Store. It connects diagnostic assessment, grammar and vocabulary practice, learning records, and spaced review. The portfolio documents learning design, a development-version audit of 3,966 questions, and ongoing UX and accessibility work.
+
+**Technologies:** Swift, SwiftUI, Core Data, Combine, GitHub Actions, Fastlane
+
+[App Store](https://apps.apple.com/jp/app/part5-pro/id6748593708)
+
 ### [EIKEN Grade 1 Speaking](https://github.com/Shunsuke-max/eiken-grade1-speaking)
 
 A lightweight learning website with 300 reusable English expressions and 900 example sentences. It supports search, category filters, randomized practice, and Japanese translations, without external dependencies.

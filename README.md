@@ -31,6 +31,12 @@ An iOS learning app for TOEIC Part 5, available on the App Store. It connects di
 
 [App Store](https://apps.apple.com/jp/app/part5-pro/id6748593708)
 
+### [Protein Design — Computational Research Portfolio](https://github.com/Shunsuke-max/protein-design-portfolio)
+
+Computational protein design research undertaken for the Anthropic × Adaptyv Protein Design Competition 2026. The portfolio documents literature review, scientific problem formulation, computational research workflows, reproducibility, and the distinction between predicted structures and experimental evidence.
+
+**Tools:** Python, Jupyter Notebook, Google Colab, biomolecular design and structure prediction models
+
 ### [EIKEN Grade 1 Speaking](https://github.com/Shunsuke-max/eiken-grade1-speaking)
 
 A lightweight learning website with 300 reusable English expressions and 900 example sentences. It supports search, category filters, randomized practice, and Japanese translations, without external dependencies.

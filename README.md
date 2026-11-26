@@ -37,6 +37,10 @@ Computational protein design research undertaken for the Anthropic × Adaptyv Pr
 
 **Tools:** Python, Jupyter Notebook, Google Colab, biomolecular design and structure prediction models
 
+### Hitokoto English（ひとこと英語）
+
+An iPhone app for practicing what to say in everyday situations. Learners put their thoughts into English, then use AI feedback to check whether their wording conveys the intended meaning and sounds natural.
+
 ### [EIKEN Grade 1 Speaking](https://github.com/Shunsuke-max/eiken-grade1-speaking)
 
 A lightweight learning website with 300 reusable English expressions and 900 example sentences. It supports search, category filters, randomized practice, and Japanese translations, without external dependencies.

@@ -98,8 +98,15 @@ An iOS learning app for TOEIC Part 5 published and continuously maintained on th
 
 ---
 
+## Technical Writing
+
+- **[UX Writing in Scientific AI Software (JP)](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/docs/ux-writing-in-scientific-ai.md)**: Treating UI copy and technical language as core software quality attributes—with real FoldLens before/after refinements and an [8-point content quality checklist](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/docs/ux-writing-checklist.md).
+
+---
+
 ## Core Principles
 
 1. **Separating Prediction from Experimental Proof**: Never equate confidence metrics (pLDDT / ipTM) or geometric contact agreement with experimental binding affinity or biological efficacy; always surface uncertainty and falsification conditions.
 2. **Reproducibility & Data Integrity**: Record execution environments, parameters, provenance, and failure modes, and verify model outputs with independent automated checks rather than trusting default filters blindly.
 3. **Trustworthy AI for Research Workflows**: Protect sensitive scientific data through local-first boundaries and ground LLM reasoning in deterministic computation so scientists can verify every conclusion.
+4. **Treating Language & UI Copy as a Software Quality Attribute**: Audit naturalness, factual precision, terminology consistency, and signal-to-noise ratio alongside code readability and automated tests.

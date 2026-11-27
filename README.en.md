@@ -2,31 +2,49 @@
 
 [日本語](README.md) | English
 
-**Pharmacy / Life Science × Data Science & AI**  
-*Building computational workflows and evidence-linked scientific software to accelerate drug discovery.*
+**Pharmacy / Life Science × Data Science & AI Engineering**  
+*Building reproducible computational pipelines and evidence-linked scientific AI software for drug discovery.*
 
-I am a pharmacy student working at the intersection of **structural bioinformatics, computational protein design, and scientific AI agents**. Rather than treating predictive models as black boxes, I focus on **evidence traceability, reproducibility, and clear boundaries between computational predictions and experimental validation**.
+I am a pharmacy student working at the intersection of **structural bioinformatics, computational protein design, and scientific AI agents**. Rather than treating predictive models as black boxes, I focus on **independent data-quality verification, reproducibility, and clear boundaries between computational predictions and experimental validation**.
 
----
-
-## Focus Areas
-
-- **AI for Drug Discovery & Structural Bioinformatics**: Protein structure evaluation, conformational ensemble analysis, and quantitative interface characterization.
-- **Computational Protein Design Workflows**: Integrating generative structure/sequence design and structure prediction models into reproducible hypothesis-testing pipelines.
-- **Evidence-Linked AI Research Agents**: Designing local-first scientific workspaces that protect confidential research data while separating deterministic computation from LLM reasoning.
-- **Data Quality & Production Software Engineering**: Automated data integrity audits, reproducibility metadata logging, regression testing, and CI/CD workflows.
+> **30-Second Role Guide**
+> - **Data Science / Structural Bioinformatics** → [VAMP721–PICALM1a Ensemble Analysis (Python / pytest / CI)](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md) · [FoldLens Real AF3 Case Studies](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md)
+> - **AI Engineering / Software Architecture** → [FoldLens Interactive Live Demo (Client-Side, Real AF3)](https://shunsuke-max.github.io/foldlens-portfolio/) · [Part5 Pro Data Quality Audit & iOS Production](https://github.com/Shunsuke-max/part5-pro-portfolio)
 
 ---
 
-## Technical Stack
+## Verified Findings & Data-Quality Audits
 
-| Area | Technologies & Tools |
-| :--- | :--- |
-| **Data Science & Scientific Computing** | Python, Jupyter Notebook, Google Colab, NumPy, pandas, SciPy, Matplotlib, PyTorch |
-| **Structural Biology & Molecular Analysis** | MDTraj (DSSP / SASA / contact analysis), 3Dmol.js, py3Dmol |
-| **Biomolecular AI Models** | AlphaFold 3, Boltz-2, BioEmu-2, RFdiffusion3, ProteinMPNN, LigandMPNN |
-| **AI Agents & Web / Desktop** | TypeScript, React, Express, OpenAI Responses API, Zod, Electron, Supabase, Stripe |
-| **Mobile, Testing & CI** | Swift, SwiftUI, Core Data, Combine, Vitest, GitHub Actions, Fastlane |
+| Project | Blind Spot / Problem Uncovered | Engineering & Scientific Solution |
+| :--- | :--- | :--- |
+| **[VAMP721–PICALM1a](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md)** | BioEmu-2's official QC (`check_physicality`) passed **8/8** frames despite residual interchain steric clashes | Implemented an independent `SciPy cKDTree` heavy-atom clash check that caught **2 frames (1.62 Å / 2.02 Å)**, packaged into a tested Python module with `pytest` + GitHub Actions CI |
+| **[FoldLens](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md)** | Relying on single summary scores (`ipTM 0.79`) hides interface PAE tension, local low-pLDDT overlap, and 3-chain divergence | Built a Web Worker deterministic engine that surfaces **5/5 geometric consensus vs. 11.0 Å PAE conflict**, **60.3 Å 3-chain ensemble divergence**, and duplicate-coordinate traps ([Live Demo](https://shunsuke-max.github.io/foldlens-portfolio/)) |
+| **[Part5 Pro](https://github.com/Shunsuke-max/part5-pro-portfolio)** | Structural inconsistencies across production learning datasets and SM-2 scheduling edge cases | Built an **automated structural audit across 3,966 questions (59 files)** paired with SM-2 spec fixes and regression tests |
+
+---
+
+## Visual Showcase
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://shunsuke-max.github.io/foldlens-portfolio/">
+        <img src="https://raw.githubusercontent.com/Shunsuke-max/foldlens-portfolio/main/assets/real-af3-case1-overview.png" alt="FoldLens Live Demo with Real AF3 Data" />
+      </a>
+      <br />
+      <strong><a href="https://shunsuke-max.github.io/foldlens-portfolio/">▶ FoldLens Live Demo (2 Real AF3 Cases Preloaded)</a></strong><br />
+      <sub>Client-side Web Worker analysis of real AlphaFold 3 predictions—3Dmol.js, PAE, cross-model RMSD/Jaccard in 5 seconds.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md">
+        <img src="https://raw.githubusercontent.com/Shunsuke-max/vamp721-structural-ensemble/main/assets/interface_contact_map.png" alt="VAMP721–PICALM1a BioEmu-2 Interface Contact Map" />
+      </a>
+      <br />
+      <strong><a href="https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md">VAMP721–PICALM1a Conformational Ensemble Analysis</a></strong><br />
+      <sub>BioEmu-2 sampling with DSSP, 6/8/10 Å contact sensitivity analysis, independent clash QC, and pytest CI.</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -34,16 +52,17 @@ I am a pharmacy student working at the intersection of **structural bioinformati
 
 ### 1. Life Science & Drug Discovery AI
 
-#### [FoldLens — Evidence-Linked AlphaFold 3 Research Workspace](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md)
-A **local-first AI research workspace** for interpreting, comparing, and auditing AlphaFold 3 predictions (originally built for OpenAI Build Week 2026 and expanded into a broader scientific software project).
-- **Key design decisions**: Keeps source structure files (CIF / PAE JSON) on-device to protect unpublished research data, separates deterministic numerical analysis (confidence metrics, atomic contacts, cross-model comparison) from a tool-using AI agent, and links every claim back to verifiable measurements.
-- **Stack**: TypeScript, React, Express, 3Dmol.js, OpenAI Responses API, Zod, Electron, Vitest
-- **Links**: [Product & Engineering Portfolio (EN)](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md) · [Original Public Source](https://github.com/Shunsuke-max/foldlens) · [macOS Releases](https://github.com/Shunsuke-max/foldlens-releases/releases)
+#### [FoldLens — Evidence-Linked AlphaFold 3 Research Workspace](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md) · [▶ Live Demo](https://shunsuke-max.github.io/foldlens-portfolio/)
+A **local-first AI research workspace** for interpreting, comparing, and auditing AlphaFold 3 predictions (originally built for OpenAI Build Week 2026 and expanded into a full scientific software architecture).
+- **Real AF3 Case Studies & Live Demo**: Published a zero-install [GitHub Pages interactive demo](https://shunsuke-max.github.io/foldlens-portfolio/) preloaded with two contrasting real AF3 ensembles (`Arabidopsis PICALM1a–VAMP721` geometry-vs-PAE conflict & `Human PICALM–HRB–VAMP7` 3-chain divergence / IDR isolation).
+- **Key design decisions**: Parses source CIF/PAE JSON on-device inside Web Workers to protect unpublished sequences/coordinates, and separates deterministic metrics (duplicate-coordinate gate, heavy-atom Jaccard overlap, interface RMSD, reciprocal PAE) from a 6-tool AI research agent.
+- **Stack**: TypeScript, React, Express, 3Dmol.js, Web Workers, OpenAI Responses API, Zod, Electron, Vitest
+- **Links**: [**▶ Live Demo (Browser)**](https://shunsuke-max.github.io/foldlens-portfolio/) · [Real AF3 Case Studies & Architecture (EN)](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md) · [Original Public Source](https://github.com/Shunsuke-max/foldlens) · [macOS Releases](https://github.com/Shunsuke-max/foldlens-releases/releases)
 
 #### [VAMP721–PICALM1a Structural Ensemble Analysis (Python / BioEmu-2)](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md)
-A reproducible Python structural bioinformatics pipeline using **BioEmu-2** (`equilibrium` mode) to sample and quantitatively evaluate protein-complex conformational ensembles (public executed notebook, plots, and sensitivity checks).
-- **Highlights**: Integrates construct validation, explicit MSA generation, unrestrained A100 sampling, physicality QC (`8/8` passed), MDTraj DSSP secondary-structure analysis, `SciPy cKDTree` interchain/intradomain contact maps (6/8/10 Å sensitivity analysis), and automated reproducibility provenance packaging.
-- **Stack**: Python, Jupyter Notebook, Google Colab, BioEmu-2, PyTorch, MDTraj, SciPy, NumPy, pandas, Matplotlib
+A reproducible Python structural bioinformatics pipeline using **BioEmu-2** (`equilibrium` mode) to sample and quantitatively evaluate protein-complex conformational ensembles with independent post-hoc QC and CI-tested metrics.
+- **Highlights**: Integrates construct validation, explicit MSA generation, unrestrained A100 sampling, independent `cKDTree` heavy-atom clash detection catching 2 residual clashes (`1.62 Å / 2.02 Å`) after `check_physicality` passed 8/8, MDTraj DSSP/BSA, 6/8/10 Å contact sensitivity analysis, and `pytest` + GitHub Actions CI.
+- **Stack**: Python, Jupyter Notebook, Google Colab, BioEmu-2, PyTorch, MDTraj, SciPy, NumPy, pandas, Matplotlib, pytest
 - **Links**: [Analysis Repository & Executed Notebook (EN)](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md)
 
 #### [AI-driven Protein Design — Computational Research Portfolio](https://github.com/Shunsuke-max/protein-design-portfolio/blob/main/README.en.md)
@@ -67,14 +86,20 @@ An iOS learning app for TOEIC Part 5 published and continuously maintained on th
 
 ---
 
-## Core Principles
+## Technical Stack
 
-1. **Separating Prediction from Experimental Proof**: Never equate confidence metrics (pLDDT / ipTM) or geometric contact agreement with experimental binding affinity or biological efficacy; always surface uncertainty and falsification conditions.
-2. **Reproducibility & Data Integrity**: Record execution environments, parameters, provenance, and failure modes, and automate structural validation checks wherever possible.
-3. **Trustworthy AI for Research Workflows**: Protect sensitive scientific data through local-first boundaries and ground LLM reasoning in deterministic computation so scientists can verify every conclusion.
+| Area | Technologies & Tools |
+| :--- | :--- |
+| **Data Science & Scientific Computing** | Python, Jupyter Notebook, Google Colab, NumPy, pandas, SciPy, Matplotlib, PyTorch, pytest |
+| **Structural Biology & Molecular Analysis** | MDTraj (DSSP / SASA / contact analysis), 3Dmol.js, py3Dmol |
+| **Biomolecular AI Models** | AlphaFold 3, Boltz-2, BioEmu-2, RFdiffusion3, ProteinMPNN, LigandMPNN |
+| **AI Agents & Web / Desktop** | TypeScript, React, Express, Web Workers, OpenAI Responses API, Zod, Electron, Supabase, Stripe |
+| **Mobile, Testing & CI** | Swift, SwiftUI, Core Data, Combine, Vitest, GitHub Actions, Fastlane |
 
 ---
 
-## Vision
+## Core Principles
 
-By combining domain grounding in pharmacy and life sciences with data science and AI engineering, I aim to contribute to uncovering disease mechanisms and accelerating data-driven drug discovery.
+1. **Separating Prediction from Experimental Proof**: Never equate confidence metrics (pLDDT / ipTM) or geometric contact agreement with experimental binding affinity or biological efficacy; always surface uncertainty and falsification conditions.
+2. **Reproducibility & Data Integrity**: Record execution environments, parameters, provenance, and failure modes, and verify model outputs with independent automated checks rather than trusting default filters blindly.
+3. **Trustworthy AI for Research Workflows**: Protect sensitive scientific data through local-first boundaries and ground LLM reasoning in deterministic computation so scientists can verify every conclusion.

@@ -8,8 +8,8 @@
 I am a pharmacy student working at the intersection of **structural bioinformatics, computational protein design, and scientific AI agents**. Rather than treating predictive models as black boxes, I focus on **independent data-quality verification, reproducibility, and clear boundaries between computational predictions and experimental validation**.
 
 > **30-Second Role Guide**
-> - **Data Science / Structural Bioinformatics** → [VAMP721–PICALM1a Ensemble Analysis (Python / pytest / CI)](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md) · [FoldLens Real AF3 Case Studies](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md)
-> - **AI Engineering / Software Architecture** → [FoldLens Interactive Live Demo (Client-Side, Real AF3)](https://shunsuke-max.github.io/foldlens-portfolio/) · [Part5 Pro Data Quality Audit & iOS Production](https://github.com/Shunsuke-max/part5-pro-portfolio)
+> - **Data Science / Structural Bioinformatics** → [VAMP721–PICALM1a Ensemble Analysis (Python / pytest / CI)](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md) · [FoldLens Real AF3 Case Studies](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md) · [FoldLens Core Engine & Calibration](https://github.com/Shunsuke-max/foldlens-core/blob/main/README.en.md)
+> - **AI Engineering / Software Architecture** → [FoldLens Core (6-Tool Grounded Agent · Zod · 125 Tests)](https://github.com/Shunsuke-max/foldlens-core/blob/main/README.en.md) · [FoldLens Interactive Live Demo (Client-Side, Real AF3)](https://shunsuke-max.github.io/foldlens-portfolio/) · [Part5 Pro Data Quality Audit & iOS Production](https://github.com/Shunsuke-max/part5-pro-portfolio)
 
 ---
 
@@ -57,7 +57,7 @@ A **local-first AI research workspace** for interpreting, comparing, and auditin
 - **Real AF3 Case Studies & Live Demo**: Published a zero-install [GitHub Pages interactive demo](https://shunsuke-max.github.io/foldlens-portfolio/) preloaded with two contrasting real AF3 ensembles (`Arabidopsis PICALM1a–VAMP721` geometry-vs-PAE conflict & `Human PICALM–HRB–VAMP7` 3-chain divergence / IDR isolation).
 - **Key design decisions**: Parses source CIF/PAE JSON on-device inside Web Workers to protect unpublished sequences/coordinates, and separates deterministic metrics (duplicate-coordinate gate, heavy-atom Jaccard overlap, interface RMSD, reciprocal PAE) from a 6-tool AI research agent.
 - **Stack**: TypeScript, React, Express, 3Dmol.js, Web Workers, OpenAI Responses API, Zod, Electron, Vitest
-- **Links**: [**▶ Live Demo (Browser)**](https://shunsuke-max.github.io/foldlens-portfolio/) · [Real AF3 Case Studies & Architecture (EN)](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md) · [Original Public Source](https://github.com/Shunsuke-max/foldlens) · [macOS Releases](https://github.com/Shunsuke-max/foldlens-releases/releases)
+- **Links**: [**▶ Live Demo (Browser)**](https://shunsuke-max.github.io/foldlens-portfolio/) · [**Core Engine & Tests (`foldlens-core`)**](https://github.com/Shunsuke-max/foldlens-core/blob/main/README.en.md) · [Real AF3 Case Studies (EN)](https://github.com/Shunsuke-max/foldlens-portfolio/blob/main/README.en.md) · [macOS Releases](https://github.com/Shunsuke-max/foldlens-releases/releases) *(commercial auth/billing app kept private; live walkthrough available in interviews)*
 
 #### [VAMP721–PICALM1a Structural Ensemble Analysis (Python / BioEmu-2)](https://github.com/Shunsuke-max/vamp721-structural-ensemble/blob/main/README.en.md)
 A reproducible Python structural bioinformatics pipeline using **BioEmu-2** (`equilibrium` mode) to sample and quantitatively evaluate protein-complex conformational ensembles with independent post-hoc QC and CI-tested metrics.

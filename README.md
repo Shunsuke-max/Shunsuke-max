@@ -8,8 +8,8 @@
 生命現象の理解と創薬研究の加速に向けて、**構造バイオインフォマティクス・計算タンパク質設計・AI研究支援ツール**の領域で解析パイプラインとソフトウェアを開発しています。予測モデルを「動かすだけ」で終わらせず、**モデルの弱点や見落としを数値で確かめる独立検証、再現性の確保、実験による裏付けとの線引き**を大切にしています。
 
 > **30秒で見る・関心領域別ガイド**
-> - **データサイエンス／構造解析にご関心のある方** → [VAMP721–PICALM1a 構造アンサンブル解析（Python / pytest / CI）](https://github.com/Shunsuke-max/vamp721-structural-ensemble) ・ [FoldLens 実データ検証ケーススタディ](https://github.com/Shunsuke-max/foldlens-portfolio)
-> - **AIエンジニアリング／ソフトウェア設計にご関心のある方** → [FoldLens ライブデモ（ブラウザ内完結・実AF3データ搭載）](https://shunsuke-max.github.io/foldlens-portfolio/) ・ [Part5 Pro データ品質監査 & iOS 開発運用](https://github.com/Shunsuke-max/part5-pro-portfolio)
+> - **データサイエンス／構造解析にご関心のある方** → [VAMP721–PICALM1a 構造アンサンブル解析（Python / pytest / CI）](https://github.com/Shunsuke-max/vamp721-structural-ensemble) ・ [FoldLens 実データ検証ケーススタディ](https://github.com/Shunsuke-max/foldlens-portfolio) ・ [FoldLens Core 解析エンジン＆校正コード](https://github.com/Shunsuke-max/foldlens-core)
+> - **AIエンジニアリング／ソフトウェア設計にご関心のある方** → [FoldLens Core（6ツールAIエージェント・Zod検証・125テスト）](https://github.com/Shunsuke-max/foldlens-core) ・ [FoldLens ライブデモ（ブラウザ完結・実AF3データ搭載）](https://shunsuke-max.github.io/foldlens-portfolio/) ・ [Part5 Pro データ品質監査 & iOS 開発運用](https://github.com/Shunsuke-max/part5-pro-portfolio)
 
 ---
 
@@ -57,7 +57,7 @@ AlphaFold 3 の構造予測結果を、研究者が比較・検証するため�
 - **実データケーススタディ & ライブデモ**：公開されている野生型配列 2 件（① `Arabidopsis PICALM1a–VAMP721`：形状は 5/5 一致するが界面 PAE が高めの例、② `Human PICALM–HRB–VAMP7`：3鎖複合体でモデル間の配置が大きく割れる例）を [GitHub Pages](https://shunsuke-max.github.io/foldlens-portfolio/) 上でブラウザ完結デモとして公開しています。
 - **設計のポイント**：未公開の立体構造ファイル（CIF / PAE JSON）を外部送信せず端末内の Web Worker で解析し、厳密な数値計算（重複ファイル検査・接触一致率・RMSD・両方向 PAE）と、6 種類の解析ツールを使い分ける AI エージェントを明確に分離しています。
 - **技術**：TypeScript, React, Express, 3Dmol.js, Web Workers, OpenAI Responses API, Zod, Electron, Vitest
-- **リンク**：[**▶ ライブデモ（ブラウザで試す）**](https://shunsuke-max.github.io/foldlens-portfolio/) · [プロダクト詳細・実データケーススタディ](https://github.com/Shunsuke-max/foldlens-portfolio) · [初期版ソースコード](https://github.com/Shunsuke-max/foldlens) · [macOS 配布ページ](https://github.com/Shunsuke-max/foldlens-releases/releases)
+- **リンク**：[**▶ ライブデモ（ブラウザで試す）**](https://shunsuke-max.github.io/foldlens-portfolio/) · [**コア実装・テスト（foldlens-core）**](https://github.com/Shunsuke-max/foldlens-core) · [実データケーススタディ](https://github.com/Shunsuke-max/foldlens-portfolio) · [macOS 配布](https://github.com/Shunsuke-max/foldlens-releases/releases)（認証・課金を含む製品本体は非公開運用・面接時の画面共有に対応）
 
 #### [VAMP721–PICALM1a 構造アンサンブル解析（Python / BioEmu-2）](https://github.com/Shunsuke-max/vamp721-structural-ensemble)
 拡散モデル **BioEmu-2** を使ってタンパク質複合体がとり得る複数の立体構造（配座アンサンブル）を探索し、独自の物理チェック・感度分析・自動テスト済み Python モジュールまで一貫して組んだ解析リポジトリです。
